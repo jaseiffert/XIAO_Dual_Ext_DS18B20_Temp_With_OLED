@@ -1,0 +1,21 @@
+#Kitchen External Temperature Sensors Remote
+sensor:
+  #######################################
+  # DS18B20 External Temperature Sensors with Display
+  - name: "External Temperature Sensor 01"
+    unique_id: remote_ext_temp_01
+    state_topic: "kitchen/temp/ext_temp_01"
+    unit_of_measurement: "°F"
+    value_template: "{{ value_json.temp_01 }}"
+    
+  - name: "External Temperature Sensor 02"
+    unique_id: remote_ext_temp_02
+    state_topic: "kitchen/temp/ext_temp_01"
+    unit_of_measurement: "°F"
+    value_template: "{{ value_json.temp_02 }}"
+
+  - name: "External Temp Sensor WiFi Signal"
+    unique_id: remote_ext_wifisig_01
+    state_topic: "kitchen/temp/ext_temp_01"
+    unit_of_measurement: "db"
+    value_template: "{{ value_json.wifisig }}"
