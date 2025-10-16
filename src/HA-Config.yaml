@@ -17,5 +17,5 @@ sensor:
   - name: "External Temp Sensor WiFi Signal"
     unique_id: remote_ext_wifisig_01
     state_topic: "kitchen/temp/ext_temp_01"
-    unit_of_measurement: "db"
+    unit_of_measurement: "dBm"
     value_template: "{{ value_json.wifisig }}"
